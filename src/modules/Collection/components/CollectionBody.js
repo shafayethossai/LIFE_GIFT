@@ -41,4 +41,6 @@ function Collection() {
   );
 }
 
+// haha
+
 export default Collection;
