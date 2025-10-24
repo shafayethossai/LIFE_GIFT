@@ -1,6 +1,4 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 function Collection() {
   return (
@@ -54,7 +52,7 @@ function Collection() {
             to="/donation/eye"
             className="donation-box eye d-flex align-items-center justify-content-center"
           >
-            👁️ Eye / Cornea
+            👁️ Eye
           </Link>
         </div>
         

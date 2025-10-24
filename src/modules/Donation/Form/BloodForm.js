@@ -23,7 +23,7 @@ function BloodForm() {
 
   const InputField = ({ label, name, value, onChange, type = "text" }) => (
     <div className="mb-3">
-      <label className="form-label">{label}</label>
+      <label className="form-label"> {label} </label>
       <input type={type} name={name} className="form-control" value={value} onChange={onChange} required />
     </div>
   );

@@ -17,10 +17,12 @@ function UserProfile() {
 
     useEffect(() => {
         const saved = localStorage.getItem("userProfile");
+
         if (saved) {
             try {
                 setProfile(JSON.parse(saved));
-            } catch (err) {
+            } 
+            catch (err) {
                 console.error("Failed to parse saved profile:", err);
             }
         }
@@ -65,6 +67,7 @@ function UserProfile() {
 
         for (let i=0; i<required.length; i++) {
             const key = required[i];
+
             if (!profile[key] || profile[key].toString().trim() === "") {
                 alert("Please fill " + key);
                 return;
@@ -75,6 +78,7 @@ function UserProfile() {
             localStorage.setItem("userProfile", JSON.stringify(profile));
             alert("Profile saved locally.");
         } catch (err) {
+
             console.error("Failed to save profile:", err);
             alert("Failed to save profile locally.");
         }
@@ -94,7 +98,7 @@ function UserProfile() {
                         <div className="card-body">
                             <form onSubmit={handleSubmit}>
                                 <div className="mb-3">
-                                    <label className="form-label">Full Name</label>
+                                    <label className="form-label"> Full Name </label>
                                     <input
                                         type="text"
                                         className="form-control"
@@ -106,7 +110,7 @@ function UserProfile() {
 
                                 <div className="row mb-3">
                                     <div className="col">
-                                        <label className="form-label">Contact Number</label>
+                                        <label className="form-label"> Contact Number </label>
                                         <input
                                             type="tel"
                                             className="form-control"
@@ -117,7 +121,7 @@ function UserProfile() {
                                     </div>
 
                                     <div className="col">
-                                        <label className="form-label">District</label>
+                                        <label className="form-label"> District </label>
                                         <input
                                             type="text"
                                             className="form-control"
@@ -130,7 +134,7 @@ function UserProfile() {
 
                                 <div className="row mb-3">
                                     <div className="col">
-                                        <label className="form-label">Age</label>
+                                        <label className="form-label"> Age </label>
                                         <input
                                             type="number"
                                             className="form-control"
@@ -140,16 +144,16 @@ function UserProfile() {
                                         />
                                     </div>
                                     <div className="col">
-                                        <label className="form-label">Gender</label>
+                                        <label className="form-label"> Gender </label>
                                         <select
                                             className="form-select"
                                             name="gender"
                                             value={profile.gender}
                                             onChange={handleChange}
                                         >
-                                            <option value="">Select</option>
-                                            <option value="Male">Male</option>
-                                            <option value="Female">Female</option>
+                                            <option value=""> Select </option>
+                                            <option value="Male"> Male </option>
+                                            <option value="Female"> Female </option>
                                             <option value="Other">Other</option>
                                         </select>
                                     </div>
@@ -157,7 +161,7 @@ function UserProfile() {
 
                                 <div className="row mb-3">
                                     <div className="col">
-                                        <label className="form-label">Height</label>
+                                        <label className="form-label"> Height </label>
                                         <input
                                             type="text"
                                             className="form-control"
@@ -168,7 +172,7 @@ function UserProfile() {
                                     </div>
 
                                     <div className="col">
-                                        <label className="form-label">Blood Group</label>
+                                        <label className="form-label"> Blood Group </label>
                                         <input
                                             type="text"
                                             className="form-control"
@@ -180,7 +184,7 @@ function UserProfile() {
                                 </div>
 
                                 <div className="mb-3">
-                                    <label className="form-label">Email Address</label>
+                                    <label className="form-label"> Email Address </label>
                                     <input
                                         type="email"
                                         className="form-control"
@@ -191,7 +195,7 @@ function UserProfile() {
                                 </div>
 
                                 <div className="mb-3">
-                                    <label className="form-label">NID Number</label>
+                                    <label className="form-label"> NID Number </label>
                                     <input
                                         type="text"
                                         className="form-control"

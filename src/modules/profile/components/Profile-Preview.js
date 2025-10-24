@@ -20,11 +20,11 @@ function Profile({ profile = {} }) {
 
           <div className="profile-info">
             <h5 className="fw-bold mb-2">{profile.name || "Full Name"}</h5>
-            <div className="profile-detail"><span className="label">Age:</span><span className="value">{profile.age || "-"}</span></div>
-            <div className="profile-detail"><span className="label">Gender:</span><span className="value">{profile.gender || "-"}</span></div>
-            <div className="profile-detail"><span className="label">Blood Group:</span><span className="value">{profile.bloodGroup || "-"}</span></div>
-            <div className="profile-detail"><span className="label">Contact:</span><span className="value">{profile.contact || "-"}</span></div>
-            <div className="profile-detail"><span className="label">Height:</span><span className="value">{profile.height || "-"}</span></div>
+            <div className="profile-detail"><span className="label"> Age: </span><span className="value">{profile.age || "-"}</span></div>
+            <div className="profile-detail"><span className="label"> Gender: </span><span className="value">{profile.gender || "-"}</span></div>
+            <div className="profile-detail"><span className="label"> Blood Group: </span><span className="value">{profile.bloodGroup || "-"}</span></div>
+            <div className="profile-detail"><span className="label"> Contact: </span><span className="value">{profile.contact || "-"}</span></div>
+            <div className="profile-detail"><span className="label"> Height: </span><span className="value">{profile.height || "-"}</span></div>
           </div>
         </div>
       </div>

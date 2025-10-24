@@ -29,6 +29,7 @@ function Collection() {
         <div className="row justify-content-center gx-3">
           { items.map((item, index) => {
               const path = `/form/${item.name.toLowerCase()}`; // e.g. /form/heart
+              
               return (
                 <div key={ index } className="col-12 col-sm-6 col-md-4 mb-4 d-flex justify-content-center">
                   <div className="collection-item-box">

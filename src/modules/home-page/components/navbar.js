@@ -42,7 +42,6 @@ function NavBar() {
             <li className="nav-item mx-3">
               <Link className="nav-link fw-bold" to="/authority">Authority</Link>
             </li>
-
           </ul>
         </div>
 

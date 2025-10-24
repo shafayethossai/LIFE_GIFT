@@ -53,23 +53,46 @@ function LoginPage() {
     <div className="register-section d-flex align-items-center justify-content-center">
         <div className="card register-card shadow-lg p-4">
             <div className="text-center mb-4">
-                <h1 className="register-title">LifeGift</h1>
+                <h1 className="register-title"> LifeGift </h1>
+
                 <p className="register-subtitle">
                     Join our community and help save lives. Fill the form below to create your account.
                 </p>
             </div>
+
             <form onSubmit={ handleSubmit }>
                 <div className="row g-3">
                     <div className="col-md-6">
-                        <input type="text" name="name" className="form-control" placeholder="Full Name" value={ formData.name } onChange={ handleChange } required/>
+                        <input type="text" 
+                            name="name" 
+                            className="form-control" 
+                            placeholder="Full Name" 
+                            value={ formData.name } 
+                            onChange={ handleChange } 
+                            required
+                        />
                     </div>
                 
                     <div className="col-md-6">
-                        <input type="text" name="nationality" className="form-control" placeholder="Nationality" value={ formData.nationality } onChange={ handleChange } required/>
+                        <input type="text" 
+                            name="nationality" 
+                            className="form-control" 
+                            placeholder="Nationality" 
+                            value={ formData.nationality } 
+                            onChange={ handleChange } 
+                            required
+                        />
                     </div>
 
                     <div className="col-md-6">
-                        <input type="tel" name="phone" className="form-control" placeholder="Phone Number" value={ formData.phone } onChange={ handleChange } required/>
+                        <input type="tel" 
+                            name="phone" 
+                            className="form-control" 
+                            placeholder="Phone Number" 
+                            value={ formData.phone } 
+                            onChange={ handleChange } 
+                            required
+                        />
                     </div>
 
                     <div className="col-md-6">
@@ -105,14 +128,18 @@ function LoginPage() {
                         onChange={ handleChange } 
                         required/>
                     </div>
+
                     <div className="col-md-12">
                         <input type="password" name="password" className="form-control" placeholder="Password" value={ formData.password } onChange={ handleChange } required/>
                     </div>
                 </div>
+
                 <button type="submit" className="btn register-btn w-100 mt-4">Register & Login</button>
             </form>
+
             <p className="mt-3 text-center text-muted">
-                Already have an account? <button className="btn btn-link p-0" onClick={handleLoginRedirect}>Login here</button>
+                Already have an account? 
+                <button className="btn btn-link p-0" onClick={handleLoginRedirect}> Login here </button>
             </p>
         </div>
     </div>
