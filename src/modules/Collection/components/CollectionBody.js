@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Lung from "../../../image/Lung.png";
 import Kidney from "../../../image/Kidney.png";
 import Heart from "../../../image/Heart.png";
@@ -8,12 +9,12 @@ import Eye from "../../../image/Eye.png";
 
 function Collection() {
   const items = [
-    { name: "Lung", image: Lung, link: "#" },
-    { name: "Kidney", image: Kidney, link: "#" },
-    { name: "Heart", image: Heart, link: "#" },
-    { name: "Blood", image: Blood, link: "#" },
-    { name: "Liver", image: Liver, link: "#" },
-    { name: "Eye", image: Eye, link: "#" },
+    { name: "Lung", image: Lung },
+    { name: "Kidney", image: Kidney },
+    { name: "Heart", image: Heart },
+    { name: "Blood", image: Blood },
+    { name: "Liver", image: Liver },
+    { name: "Eye", image: Eye },
   ];
 
   return (
@@ -26,21 +27,23 @@ function Collection() {
       </p>
       <div className="container-fluid px-3">
         <div className="row justify-content-center gx-3">
-          { items.map((item, index) => (
-            <div key={ index } className="col-12 col-sm-6 col-md-4 mb-4 d-flex justify-content-center">
-              <div className="collection-item-box">
-                <a href={ item.link }>
-                  <img src={ item.image } alt={ item.name } className="collection-item-icon" />
-                </a>
-              </div>
-            </div>
-          )) }
+          { items.map((item, index) => {
+              const path = `/form/${item.name.toLowerCase()}`; // e.g. /form/heart
+              return (
+                <div key={ index } className="col-12 col-sm-6 col-md-4 mb-4 d-flex justify-content-center">
+                  <div className="collection-item-box">
+                    <Link to={ path }>
+                      <img src={ item.image } alt={ item.name } className="collection-item-icon" />
+                    </Link>
+                  </div>
+                </div>
+              );
+            })
+          }
         </div>
       </div>
     </div>
   );
 }
-
-// haha
 
 export default Collection;

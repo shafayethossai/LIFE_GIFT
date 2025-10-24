@@ -26,6 +26,14 @@ import KidneyForm from "../Donation/Form/KidneyForm";
 import EyeForm from "../Donation/Form/EyeForm";
 import BloodForm from "../Donation/Form/BloodForm";
 
+// Collection Form
+import CollectionBlood from "../Collection/Form/Blood";
+import CollectionEye from "../Collection/Form/Eye";
+import CollectionHeart from "../Collection/Form/Heart";
+import CollectionKidney from "../Collection/Form/Kidney";
+import CollectionLiver from "../Collection/Form/Liver";
+import CollectionLung from "../Collection/Form/Lung";
+
 import "../../index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -219,6 +227,68 @@ function App() {
             <ProtectedRoute>
               <NavBar />
               <BloodForm />
+              <Footer />
+            </ProtectedRoute>
+          }
+        />
+
+        {/* Collection form routes (used by CollectionBody links like /form/heart) */}
+        <Route
+          path="/form/heart"
+          element={
+            <ProtectedRoute>
+              <NavBar />
+              <CollectionHeart />
+              <Footer />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/form/lung"
+          element={
+            <ProtectedRoute>
+              <NavBar />
+              <CollectionLung />
+              <Footer />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/form/kidney"
+          element={
+            <ProtectedRoute>
+              <NavBar />
+              <CollectionKidney />
+              <Footer />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/form/liver"
+          element={
+            <ProtectedRoute>
+              <NavBar />
+              <CollectionLiver />
+              <Footer />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/form/eye"
+          element={
+            <ProtectedRoute>
+              <NavBar />
+              <CollectionEye />
+              <Footer />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/form/blood"
+          element={
+            <ProtectedRoute>
+              <NavBar />
+              <CollectionBlood />
               <Footer />
             </ProtectedRoute>
           }
