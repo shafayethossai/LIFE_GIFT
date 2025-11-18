@@ -1,0 +1,1028 @@
+/************************************** all for home page ***************************/
+
+.app-container { 
+  min-height: 100vh; 
+  display: flex; 
+  flex-direction: column; 
+} 
+
+/*************************************** Carousel styling ***************************/ 
+.custom-carousel { 
+  margin-top: -20px; /* perfect small gap between navbar and carousel */ 
+  margin-bottom: -20px; 
+  width: 100%; 
+  max-width: 1200px; 
+}
+
+.carousel-img { 
+  height: 450px; 
+  object-fit: cover; 
+  border-radius: 10px; 
+} 
+
+/*************************************** Footer space *********************************/ 
+
+.footer-space { 
+  flex-grow: 1; 
+  height: 40px; /* reduced from 100px to 40px */ 
+  background-color: #f8f9fa; 
+} 
+
+.footer { 
+  background-color: #f8f9fa; 
+  color: #555; 
+  font-size: 14px; 
+  border-top: 1px solid #e0e0e0; 
+} 
+
+.footer strong { 
+  color: #d63384; /* a soft red-pink tone for heart/donation theme */ 
+}
+
+/*************************************** User Profile Page Styling ***************************/
+.user-profile-container {
+    min-height: 100vh;
+    background: #f8f9fa;
+    padding: 30px;
+  }
+  
+  .profile-form-card,
+  .profile-preview-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .card-header.bg-gradient {
+    background: linear-gradient(135deg, #6610f2, #0d6efd);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .profile-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+  }
+  
+  .profile-placeholder {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #adb5bd;
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-body p {
+    font-size: 1rem;
+    color: #495057;
+  }
+  
+  .card-body h5 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .profile-preview-header {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .profile-preview-header h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .profile-preview-header p {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  
+  form .form-label {
+    font-weight: 500;
+  }
+  
+  form .btn-primary {
+    background: linear-gradient(135deg, #6610f2, #0d6efd);
+    border: none;
+  }
+  
+  @media (min-width: 992px) {
+    .profile-columns {
+      display: flex;
+      gap: 30px;
+    }
+  
+    .profile-form-card,
+    .profile-preview-card {
+      flex: 1;
+    }
+  }
+  .profile-info {
+    text-align: left;
+    padding: 0 20px;
+  }
+  
+  .profile-info h5 {
+    font-size: 1.4rem;
+    color: #343a40;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .profile-detail {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #f1f3f5;
+  }
+  
+  .profile-detail:last-child {
+    border-bottom: none;
+  }
+  
+  .profile-detail .label {
+    font-weight: 500;
+    color: #495057;
+  }
+  
+  .profile-detail .value {
+    color: #212529;
+    font-weight: 400;
+  }
+
+/*************************************** Authority *********************************/
+
+/* Section container */
+.collection-container {
+  background: #f8f9fa;
+  padding: 70px 0;
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Section Title */
+.collection-title {
+  color: #0d3b66;
+  font-weight: 900;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Subtitle / Intro text */
+.collection-subtitle {
+  font-size: 1rem;
+  font-weight: 700; /* bolded */
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 60px auto;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Card container */
+.collection-box {
+  width: 100%;
+  max-width: 280px;          /* slightly wider */
+  border-radius: 20px;
+  background: white;
+  padding: 20px 15px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 350px;
+  position: relative;
+}
+
+/* Hover effects */
+.collection-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Profile image */
+.collection-icon {
+  width: 75%;
+  max-width: 140px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px; /* increased space below image */
+  border: 3px solid #0d3b66;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover image zoom */
+.collection-box:hover .collection-icon {
+  transform: scale(1.08);
+  border-color: #145ea8;
+}
+
+/* Info text */
+.collection-info {
+  text-align: center;
+  padding: 0 10px;
+}
+
+.collection-info h5 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0d3b66;
+  margin-bottom: 16px; /* increased gap from name to role */
+}
+
+.collection-info p {
+  font-size: 0.95rem;
+  font-weight: 600; /* bold role text */
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 10px; /* space below role for balance */
+}
+
+/* Grid spacing */
+.collection-container .row {
+  --bs-gutter-x: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .collection-box {
+    max-width: 240px;
+    min-height: 320px;
+  }
+  .collection-icon {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .collection-box {
+    max-width: 200px;
+    min-height: 300px;
+  }
+  .collection-icon {
+    max-width: 110px;
+  }
+}
+
+@media (max-width: 576px) {
+  .collection-box {
+    max-width: 160px;
+    min-height: 280px;
+  }
+  .collection-icon {
+    max-width: 90px;
+  }
+  .collection-info h5 {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+  .collection-info p {
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+  }
+}
+
+/*************************************** CollectionBody ***************************/
+
+.collection-section {
+  background: #f8f9fa;
+  padding: 60px 0;
+  text-align: center;
+}
+
+/* Section Title */
+.collection-section-title {
+  color: #0d3b66;
+  font-weight: 900;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Subtitle text */
+.collection-subtitle {
+  font-size: 1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+  line-height: 1.6;
+}
+
+/* Collection boxes */
+.collection-item-box {
+  width: 100%;
+  max-width: 240px;
+  aspect-ratio: 1 / 1;
+  border-radius: 20px;
+  background: white;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.collection-item-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Icon inside box */
+.collection-item-icon {
+  width: 80%;
+  max-width: 140px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.collection-item-box:hover .collection-item-icon {
+  transform: scale(1.05);
+}
+
+/* Reduce spacing between columns */
+.collection-section .row {
+  --bs-gutter-x: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .collection-item-box {
+    max-width: 180px;
+  }
+  .collection-item-icon {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 576px) {
+  .collection-item-box {
+    max-width: 140px;
+  }
+  .collection-item-icon {
+    max-width: 100px;
+  }
+}
+
+/*************************************** LoginPage ***************************/
+
+/* ===========================
+   LifeGift Registration Page
+   =========================== */
+
+.register-section {
+  min-height: 100vh;
+  background: #f8f9fa;
+  padding: 50px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-card {
+  width: 100%;
+  max-width: 700px;
+  background: white;
+  border-radius: 20px;
+  padding: 40px 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.register-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.register-title {
+  color: #0d3b66;
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+.register-subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 5px;
+}
+
+.form-control {
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  padding: 12px 15px;
+  font-size: 0.95rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #0d3b66;
+  box-shadow: 0 0 5px rgba(13,59,102,0.3);
+}
+
+.register-btn {
+  background: #0d3b66;
+  color: white;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.register-btn:hover {
+  background: #145ea8;
+  transform: translateY(-2px);
+}
+
+.register-card a {
+  color: #0d3b66;
+  font-weight: 500;
+}
+
+.register-card a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .register-card {
+    padding: 30px 20px;
+  }
+  .register-title {
+    font-size: 2rem;
+  }
+  .form-control {
+    font-size: 0.9rem;
+  }
+  .register-btn {
+    font-size: 0.95rem;
+  }
+}
+
+/*************************************** Freatures ***************************/
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #eef1f5;
+}
+
+.features-section {
+  background: #f4f7fa;
+  padding: 60px 0;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #6610f2, #0d6efd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  color: #fff;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.feature-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3);
+}
+
+.icon-glow {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 28px;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+.feature-card h5 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 992px) {
+  .features-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .features-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/***************************** Donation ************************************/
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/**************************Collection Form***************************************/
+
+/*********************** Blood.js***********************/
+
+.blood-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #f9f9f9, #ffe6e6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.blood-title {
+  font-size: 2.5rem;
+  color: #0f0101;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.blood-subtitle {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.blood-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+  width: 90%;
+  max-width: 900px;
+}
+
+.blood-card {
+  background: #fff;
+  border: 2px solid #b30000;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;   
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  text-align: center;      
+}
+
+.blood-card:hover {
+  background: #e25353;
+  color: rgb(255, 255, 255);
+  transform: translateY(-5px);
+}
+
+.blood-card h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.blood-count {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 8px;
+}
+
+.blood-card:hover .blood-count {
+  color: #fff;
+}
+
+/*********************** Lungs.js ***********************/
+.lung-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #f9f9f9, #ffe6e6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.lung-title {
+  font-size: 2.5rem;
+  color: #0f0101;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.lung-subtitle {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.lung-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+  width: 90%;
+  max-width: 900px;
+}
+
+.lung-card {
+  background: #fff;
+  border: 2px solid #b30000;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  text-align: center;
+}
+
+.lung-card:hover {
+  background: #e25353;
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+.lung-card h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.lung-donors {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 8px;
+}
+
+.lung-card:hover .lung-donors {
+  color: #fff;
+}
+/*********************** Liver.js ***********************/
+
+.liver-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #f9f9f9, #ffe6e6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.liver-title {
+  font-size: 2.5rem;
+  color: #0f0101;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.liver-subtitle {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.liver-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+  width: 90%;
+  max-width: 900px;
+}
+
+.liver-card {
+  background: #fff;
+  border: 2px solid #b30000;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  text-align: center;
+}
+
+.liver-card:hover {
+  background: #e25353;
+  color: rgb(255, 255, 255);
+  transform: translateY(-5px);
+}
+
+.liver-card h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.liver-donors {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 8px;
+}
+
+.liver-card:hover .liver-donors {
+  color: #fff;
+}
+/*********************** Kidney.js ***********************/
+
+.kidney-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #f9f9f9, #ffe6e6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.kidney-title {
+  font-size: 2.5rem;
+  color: #0f0101;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.kidney-subtitle {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.kidney-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+  width: 90%;
+  max-width: 900px;
+}
+
+.kidney-card {
+  background: #fff;
+  border: 2px solid #b30000;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;   
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  text-align: center;      
+}
+
+.kidney-card:hover {
+  background: #e25353;
+  color: rgb(255, 255, 255);
+  transform: translateY(-5px);
+}
+
+.kidney-card h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.kidney-count {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 8px;
+}
+
+.kidney-card:hover .blood-count {
+  color: #fff;
+}
+/*********************** Heart.js ***********************/
+
+.heart-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #f9f9f9, #ffe6e6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.heart-title {
+  font-size: 2.5rem;
+  color: #0f0101;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.heart-subtitle {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.heart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+  width: 90%;
+  max-width: 900px;
+}
+
+.heart-card {
+  background: #fff;
+  border: 2px solid #b30000;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;   
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  text-align: center;      
+}
+
+.heart-card:hover {
+  background: #e25353;
+  color: rgb(255, 255, 255);
+  transform: translateY(-5px);
+}
+
+.heart-card h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.heart-count {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 8px;
+}
+
+.heart-card:hover .blood-count {
+  color: #fff;
+}
+/*********************** Eyes.js ***********************/
+
+.eye-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #f9f9f9, #ffe6e6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.eye-title {
+  font-size: 2.5rem;
+  color: #0f0101;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.eye-subtitle {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.eye-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+  width: 90%;
+  max-width: 900px;
+}
+
+.eye-card {
+  background: #fff;
+  border: 2px solid #b30000;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;   
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  text-align: center;      
+}
+
+.eye-card:hover {
+  background: #e25353;
+  color: rgb(255, 255, 255);
+  transform: translateY(-5px);
+}
+
+.eye-card h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.eye-count {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 8px;
+}
+
+.eye-card:hover .blood-count {
+  color: #fff;
+}
