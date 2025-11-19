@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/LIFE_GIFT/static/css/main.3c1e979c.css",
+    "main.js": "/LIFE_GIFT/static/js/main.ebead497.js",
+    "static/media/Heart.png": "/LIFE_GIFT/static/media/Heart.ff1f82eccd16ac802f1e.png",
+    "static/media/Kidney.png": "/LIFE_GIFT/static/media/Kidney.aecc63132ce3a6f6a835.png",
+    "static/media/Eye.png": "/LIFE_GIFT/static/media/Eye.1d0e54d0229c5f14e320.png",
+    "static/media/Blood.png": "/LIFE_GIFT/static/media/Blood.5135e4482b8ac3a87349.png",
+    "static/media/Lung.png": "/LIFE_GIFT/static/media/Lung.fb586cd22ddf3482268e.png",
+    "static/media/Liver.png": "/LIFE_GIFT/static/media/Liver.887755542422addebc0d.png",
+    "static/media/3.jpg": "/LIFE_GIFT/static/media/3.0264a0f2b6deedb9c9d3.jpg",
+    "static/media/2.jpg": "/LIFE_GIFT/static/media/2.3d00bc25c0815086a1b1.jpg",
+    "static/media/Shafa.jpg": "/LIFE_GIFT/static/media/Shafa.f1c4d3e2a471da317b1f.jpg",
+    "static/media/bootstrap-icons.woff?": "/LIFE_GIFT/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
+    "static/media/Sifat.jpg": "/LIFE_GIFT/static/media/Sifat.daa77c0e09b02bd074fc.jpg",
+    "static/media/bootstrap-icons.woff2?": "/LIFE_GIFT/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
+    "static/media/Imran.jpg": "/LIFE_GIFT/static/media/Imran.0e94a2f22dd474e59dcf.jpg",
+    "static/media/1.jpg": "/LIFE_GIFT/static/media/1.bbc3db3ffc90cce05043.jpg",
+    "index.html": "/LIFE_GIFT/index.html",
+    "main.3c1e979c.css.map": "/LIFE_GIFT/static/css/main.3c1e979c.css.map",
+    "main.ebead497.js.map": "/LIFE_GIFT/static/js/main.ebead497.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3c1e979c.css",
+    "static/js/main.ebead497.js"
+  ]
+}
